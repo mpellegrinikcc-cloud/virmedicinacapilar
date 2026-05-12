@@ -185,39 +185,44 @@ export default function Home() {
         <span className="hero-scroll-hint">Explorá</span>
       </section>
 
-      {/* ── FEATURES ─────────────────────────────── */}
-      <section className="vir-section features-bg">
-        <div className="container">
-          <div className="features-header">
-            <p className="section-eyebrow">Por qué elegir VIR</p>
-            <h2 className="section-title">
-              Hecho por especialistas.<br />
-              Entregado con{' '}
-              <span className="section-title-gold">discreción.</span>
-            </h2>
-            <p className="section-sub">
-              Cada caso es único. Por eso combinamos tecnología avanzada con atención médica
-              verdaderamente personalizada.
-            </p>
-          </div>
-          <div className="features-grid">
-            {[
-              { icon: '🔬', title: 'Técnica FUE de última generación', desc: 'Extracción folicular unitaria que garantiza cicatrices mínimas y recuperación acelerada.' },
-              { icon: '🎯', title: 'Diseño personalizado de línea frontal', desc: 'Trazamos tu nueva línea respetando proporciones faciales y aspecto completamente natural.' },
-              { icon: '🔒', title: 'Confidencialidad absoluta', desc: 'Tu privacidad es nuestra prioridad. Cada consulta y procedimiento se maneja con máxima discreción.' },
-              { icon: '🤖', title: 'Diagnóstico con Vir IA antes de la consulta', desc: 'Analizamos tu caso con Vir IA para llegar al turno con un plan estructurado.' },
-              { icon: '💊', title: 'Seguimiento post-operatorio', desc: 'Acompañamos cada etapa del crecimiento con controles médicos y atención directa.' },
-              { icon: '✨', title: 'Resultados naturales garantizados', desc: 'Ningún paciente se va sin el resultado que vino a buscar. Ese es nuestro compromiso.' },
-            ].map((f) => (
-              <div className="feature-card" key={f.title}>
-                <div className="feature-icon">{f.icon}</div>
-                <h3>{f.title}</h3>
-                <p>{f.desc}</p>
-              </div>
-            ))}
+      {/* ── DOLOR ALOPECIA ── */}
+<section className="vir-section features-bg">
+  <div className="container">
+    <p className="section-eyebrow">Lo que nadie dice en voz alta</p>
+    <h2 className="section-title">
+      Perder el pelo no es solo perder{' '}
+      <span className="section-title-gold">cabello.</span>
+    </h2>
+    <p className="section-sub" style={{maxWidth:600,marginBottom:16}}>
+      Es algo que se instala despacio. Primero lo notás vos solo. Después lo dicen los demás — con una palabra, con un apodo, con un silencio. Y antes de que te des cuenta, dejaste de ser vos para ser "el pelado".
+    </p>
+    <div style={{borderLeft:'2px solid #c9a97a',paddingLeft:20,marginBottom:56,maxWidth:560}}>
+      <p className="section-sub" style={{margin:0}}>
+        <strong style={{color:'#c9a97a'}}>En VIR atendemos alopecia desde 2020.</strong> Cada dolor que describimos acá lo escuchamos en consulta, de personas reales. Sabemos exactamente en qué punto estás — y sabemos cómo salir de ahí.
+      </p>
+    </div>
+    <div className="features-grid">
+      {[
+        { n:'01 / 06', img:'/pain-01.png', title:'Dejás de tener nombre', desc:'"El pelado", "Bola 8", "Pela". Un apodo reemplaza tu nombre, tu historia, tu personalidad. Pasan años y la gente te sigue llamando así. La alopecia no solo cambia cómo te ven — cambia cómo te nombran.', vir:'En VIR entendemos que esto no es un problema estético. Es de identidad.' },
+        { n:'02 / 06', img:'/pain-02.png', title:'La seguridad que se va con el pelo', desc:'Reuniones, salidas, primeras citas. Situaciones donde antes entrabas sin pensarlo. Ahora hay un ruido de fondo que no para: ¿me está mirando la cabeza? ¿se nota más con esta luz? Ese desgaste mental es real, y es agotador.', vir:'Identificamos la causa antes de proponer cualquier tratamiento.' },
+        { n:'03 / 06', img:'/pain-03.png', title:'El mercado laboral no es neutral', desc:'Dos candidatos iguales en habilidades. Uno con pelo, uno sin. Los estudios lo confirman y muchos lo vivieron: la imagen proyecta autoridad, dinamismo, energía. La alopecia juega en contra en la primera impresión.', vir:'Un resultado natural de VIR cambia esa ecuación desde la primera consulta.' },
+        { n:'04 / 06', img:'/pain-04.png', title:'La virilidad en juego', desc:'Competir por una mujer sabiendo que el otro tiene pelo. Sentirse menos presente, menos atractivo, menos entero. No porque sea verdad — sino porque la alopecia instala esa duda y no se va sola. Esa sensación de estar "fuera de juego" tiene solución.', vir:'Nuestros pacientes describen un cambio en su vida amorosa a los 6 meses.' },
+        { n:'05 / 06', img:'/pain-05.png', title:'Envejecer antes de tiempo', desc:'Que alguien te llame "señor" cuando tenés 32. Que en una foto con amigos parezcas el mayor sin serlo. La alopecia roba años que todavía tenés — y los devuelve cuando el cabello vuelve.', vir:'El resultado de VIR es permanente. No lo vas a tener que repetir.' },
+        { n:'06 / 06', img:'/pain-06.png', title:'El cansancio de probar todo', desc:'Shampoos, suplementos, lociones, "remedios naturales". Cada cosa prometía y ninguna cumplió. No fallaste vos — te fallaron los productos. La alopecia tiene causa médica y necesita solución médica.', vir:'Sin diagnóstico real, cualquier tratamiento es un gasto. Empezá por ahí.' },
+      ].map((f) => (
+        <div className="feature-card" key={f.title} style={{padding:0,overflow:'hidden'}}>
+          <img src={f.img} alt={f.title} style={{width:'100%',height:200,objectFit:'cover',display:'block',filter:'brightness(0.75)'}} />
+          <div style={{padding:'20px 24px 24px'}}>
+            <p style={{fontSize:11,letterSpacing:'0.12em',color:'#3d3830',marginBottom:10}}>{f.n}</p>
+           <h3 style={{color:'#C4983A',fontStyle:'italic',fontSize:'1.1rem',marginBottom:10}}>{f.title}</h3>
+           <p style={{fontSize:'1.1rem',color:'var(--gray-light)',fontWeight:400,marginBottom:12}}>{f.desc}</p>
+            <p style={{color:'#c9a97a',fontSize:'11px',borderTop:'1px solid #1e1b17',paddingTop:10,fontStyle:'italic',margin:0}}>{f.vir}</p>
           </div>
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
 
       {/* ── DOCTOR ───────────────────────────────── */}
       <section className="vir-section">
@@ -364,10 +369,10 @@ export default function Home() {
           </h2>
           <div className="testimonials-grid">
             {[
-              { name: 'Martín G.',    detail: 'Trasplante FUE · 2024', text: 'No podía creer el resultado. A los 8 meses nadie notó que me hice nada, solo que "me veía bien". Ese era exactamente el objetivo.',                             avatar: 'https://i.pravatar.cc/150?img=12' },
-              { name: 'Facundo R.',   detail: 'Trasplante FUE · 2023', text: 'La atención es increíble. Te explican todo, no hay letra chica. El médico te atiende él mismo, no un técnico. Vale cada peso.',                                  avatar: 'https://i.pravatar.cc/150?img=33' },
-              { name: 'Santiago L.',  detail: 'Tratamiento capilar · 2024', text: 'Llevaba años postergando esto por miedo. El proceso fue mucho más simple de lo que imaginaba. Ya estoy pensando en la segunda sesión.',                   avatar: 'https://i.pravatar.cc/150?img=57' },
-            ].map((t) => (
+              { name: 'Ricardo V.', detail: 'Trasplante FUE · 2023', text: 'Antes era insoportable con las fotos, no había ángulo en el que saliera bien. Gracias a los médicos de VIR me reconcilié con la cámara.', avatar: 'https://i.pravatar.cc/150?img=52' },
+{ name: 'Diego M.', detail: 'Tratamiento capilar · 2024', text: 'Usaba gorras todo el tiempo, de día, de noche, adentro, afuera. Ya era parte de mí. Hoy no la necesito, la uso cuando quiero.', avatar: 'https://i.pravatar.cc/150?img=68' },
+{ name: 'Nicolás F.', detail: 'Trasplante FUE · 2024', text: 'Empecé a evitar la peluquería porque cada vez que me cortaban el pelo yo veía menos. Era una vez al mes recordándome lo mismo.', avatar: 'https://i.pravatar.cc/150?img=45' },
+{ name: 'Andrés G.', detail: 'Trasplante FUE · 2023', text: 'La gente me sumaba años en comparación con mis amigos de mi misma edad. El implante fue como viajar 10 años en el tiempo. Más feliz no puedo estar.', avatar: 'https://i.pravatar.cc/150?img=77' },            ].map((t) => (
               <div className="testimonial-card" key={t.name}>
                 <div className="testimonial-stars">★★★★★</div>
                 <p className="testimonial-text">"{t.text}"</p>
