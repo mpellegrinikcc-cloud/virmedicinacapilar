@@ -43,7 +43,7 @@ const FAQS = [
   { q: '¿El procedimiento es doloroso?', a: 'No. Se realiza bajo anestesia local, por lo que durante el procedimiento no se siente dolor. El post-operatorio es muy llevadero con medicación simple.' },
   { q: '¿Cuánto tiempo dura la intervención?', a: 'Entre 4 y 8 horas dependiendo del número de folículos. Es ambulatorio: el paciente regresa a su casa el mismo día.' },
   { q: '¿Quiénes son buenos candidatos?', a: 'Hombres y mujeres con alopecia estable que cuenten con zona donante suficiente. En la consulta evaluamos tu caso y te damos un diagnóstico personalizado.' },
-  { q: '¿Cuánto cuesta un trasplante capilar?', a: 'El costo depende del número de unidades foliculares necesarias. Tras la evaluación recibís un presupuesto detallado sin compromiso.' },
+  { q: '¿Cuánto cuesta un implante capilar?', a: 'El costo depende del número de unidades foliculares necesarias. Tras la evaluación recibís un presupuesto detallado sin compromiso.' },
 ];
 
 const PHOTO_STEP  = QUIZ_STEPS.length;          // 5
@@ -369,10 +369,10 @@ export default function Home() {
           </h2>
           <div className="testimonials-grid">
             {[
-              { name: 'Ricardo V.', detail: 'Trasplante FUE · 2023', text: 'Antes era insoportable con las fotos, no había ángulo en el que saliera bien. Gracias a los médicos de VIR me reconcilié con la cámara.', avatar: 'https://i.pravatar.cc/150?img=52' },
+              { name: 'Ricardo V.', detail: 'Implante FUE · 2023', text: 'Antes era insoportable con las fotos, no había ángulo en el que saliera bien. Gracias a los médicos de VIR me reconcilié con la cámara.', avatar: 'https://i.pravatar.cc/150?img=52' },
 { name: 'Diego M.', detail: 'Tratamiento capilar · 2024', text: 'Usaba gorras todo el tiempo, de día, de noche, adentro, afuera. Ya era parte de mí. Hoy no la necesito, la uso cuando quiero.', avatar: 'https://i.pravatar.cc/150?img=68' },
 { name: 'Nicolás F.', detail: 'Tratamiento capilar · 2024', text: 'Empecé a evitar la peluquería porque cada vez que me cortaban el pelo yo veía menos. Era una vez al mes recordándome lo mismo.', avatar: 'https://i.pravatar.cc/150?img=57' },
-{ name: 'Andrés G.', detail: 'Trasplante FUE · 2023', text: 'La gente me sumaba años en comparación con mis amigos de mi misma edad. El implante fue como viajar 10 años en el tiempo. Más feliz no puedo estar.', avatar: 'https://i.pravatar.cc/150?img=65' },            ].map((t) => (
+{ name: 'Andrés G.', detail: 'Implante FUE · 2023', text: 'La gente me sumaba años en comparación con mis amigos de mi misma edad. El implante fue como viajar 10 años en el tiempo. Más feliz no puedo estar.', avatar: 'https://i.pravatar.cc/150?img=65' },            ].map((t) => (
               <div className="testimonial-card" key={t.name}>
                 <div className="testimonial-stars">★★★★★</div>
                 <p className="testimonial-text">"{t.text}"</p>

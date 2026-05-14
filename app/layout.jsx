@@ -2,7 +2,7 @@ import './globals.css';
 
 export const metadata = {
   title: 'Vir Medicina Capilar — Restauración capilar premium',
-  description: 'Trasplante capilar de alta gama. Diagnóstico con IA, resultados permanentes y naturales. Hecho por especialistas, entregado con discreción.',
+  description: 'Implante capilar de alta gama. Diagnóstico con IA, resultados permanentes y naturales. Hecho por especialistas, entregado con discreción.',
 };
 
 export default function RootLayout({ children }) {
